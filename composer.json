@@ -1,5 +1,5 @@
 {
-  "name": "the-tinderbox/clickhouse-php-client",
+  "name": "bavix/clickhouse-php-client",
   "description": "Clickhouse client over HTTP",
   "authors": [
     {
@@ -16,6 +16,9 @@
     "psr-4": {
       "Tinderbox\\Clickhouse\\": "tests"
     }
+  },
+  "replace": {
+    "the-tinderbox/clickhouse-php-client": "self.version"
   },
   "require": {
     "php": "^7.1|^8.0",
