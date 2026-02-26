@@ -132,7 +132,7 @@ class Server
      *
      * @return \Tinderbox\Clickhouse\Server
      */
-    public function setDatabase(string $database = null): self
+    public function setDatabase(?string $database = null): self
     {
         $this->database = $database;
 
@@ -156,7 +156,7 @@ class Server
      *
      * @return \Tinderbox\Clickhouse\Server
      */
-    public function setUsername(string $username = null): self
+    public function setUsername(?string $username = null): self
     {
         $this->username = $username;
 
@@ -180,7 +180,7 @@ class Server
      *
      * @return \Tinderbox\Clickhouse\Server
      */
-    public function setPassword(string $password = null): self
+    public function setPassword(?string $password = null): self
     {
         $this->password = $password;
 
@@ -206,7 +206,7 @@ class Server
      *
      * @return \Tinderbox\Clickhouse\Server
      */
-    public function setOptions(ServerOptions $options = null): self
+    public function setOptions(?ServerOptions $options = null): self
     {
         if (is_null($options)) {
             return $this->setDefaultOptions();
