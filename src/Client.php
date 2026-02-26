@@ -71,7 +71,7 @@ class Client
      *
      * @param \Tinderbox\Clickhouse\Interfaces\TransportInterface|null $transport
      */
-    protected function setTransport(TransportInterface $transport = null)
+    protected function setTransport(?TransportInterface $transport = null)
     {
         if (is_null($transport)) {
             $this->transport = $this->createTransport();
