@@ -67,7 +67,7 @@ class Server
         ?string $database = 'default',
         ?string $username = null,
         ?string $password = null,
-        ServerOptions $options = null
+        ?ServerOptions $options = null
     ) {
         $this->setHost($host);
         $this->setPort($port);

@@ -50,7 +50,7 @@ class Client
      */
     public function __construct(
         ServerProvider $serverProvider,
-        TransportInterface $transport = null
+        ?TransportInterface $transport = null
     ) {
         $this->serverProvider = $serverProvider;
         $this->setTransport($transport);
